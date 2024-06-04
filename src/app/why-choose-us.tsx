@@ -3,15 +3,19 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
 import {
-  ChartPieIcon,
-  CloudArrowDownIcon,
-  CloudIcon,
-  Cog6ToothIcon,
-  KeyIcon,
-  UsersIcon,
+  ReceiptRefundIcon,
+  BuildingLibraryIcon,
+  ChevronDoubleDownIcon,
+  TruckIcon,
+  PencilIcon,
+  BanknotesIcon,
+  PhoneIcon,
+  TagIcon
 } from "@heroicons/react/24/solid";
 
 import BackgroundCard from "@/components/background-card";
+import BackgroundImageCard from "@/components/background-image-card";
+
 
 interface OptionProps {
   icon: React.ElementType;
@@ -41,62 +45,65 @@ export function WhyChooseUs() {
   return (
     <section className="w-full max-w-4xl mx-auto flex flex-col items-center px-4 py-10">
       <Typography variant="h2" className="text-center mb-2" color="blue-gray">
-        Why choose our course?
+        Why choose us?
       </Typography>
       <Typography
         variant="lead"
         className="mb-16 w-full text-center font-normal !text-gray-500 lg:w-10/12"
       >
-        Discover the unique advantages, benefits, and standout features that set
-        our course apart from the rest.
+        Discover the unique advantages, benefits, and standout features.
       </Typography>
       <div className="mt-8">
         <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
-          <BackgroundCard title="Expert Instructors">
-            Learn from industry professionals with years of hands-on experience
-            in React development.
-          </BackgroundCard>
+
+
+          <BackgroundImageCard title="" imageUrl="/image/mechanic.png">
+          {/* Learn from industry professionals with years of hands-on experience
+            in React development. */}
+        </BackgroundImageCard>
+
           <div className="space-y-8">
             <div className="my-4">
-              <Option icon={CloudIcon} title="React Fundamentals">
-                Start with the basics. Understand React&apos;s core concepts,
-                component structure, and the virtual DOM.
+              <Option icon={ReceiptRefundIcon} title="0 Debt on Comprehensive Policy">
+              Customers can enjoy the benefits of having zero debt when opting for a comprehensive insurance policy.
               </Option>
             </div>
             <div className="mb-4 flex gap-4">
-              <Option icon={ChartPieIcon} title="State and Props">
-                Learn how to manage component state and utilize props to pass
-                data between components.
+              <Option icon={BuildingLibraryIcon} title="Insurance Renewals">
+              They assist clients with the renewal process for their insurance policies, ensuring continuous coverage without interruption.
               </Option>
             </div>
-            <Option icon={Cog6ToothIcon} title="Component Lifecycle">
-              Dive into the lifecycle of React components and harness its power
-              to control your application&apos;s behavior.
+            <Option icon={ChevronDoubleDownIcon} title="Lowest Premium">
+            Secureway Solutions aims to provide clients with insurance policies at the lowest possible premiums, helping them save on costs.
+            </Option>
+            <Option icon={TruckIcon} title="Free Towing">
+            Secureway Solutions offers complimentary towing services in certain situations, ensuring that clients receive assistance in the event of vehicle breakdowns or accidents.
             </Option>
           </div>
         </div>
         <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
           <div className="space-y-8">
             <div className="my-4">
-              <Option icon={KeyIcon} title="Routing with React Router">
-                Create single-page applications (SPAs) with seamless navigation
-                using React Router.
+              <Option icon={PencilIcon} title="Professional Insurance Advice">
+              Their team offers professional advice to help clients choose the most suitable insurance options based on their needs and circumstances.
               </Option>
             </div>
             <div className="mb-4 flex gap-4">
-              <Option icon={UsersIcon} title="Handling Forms">
-                Master form handling in React and manage user input effectively.
+              <Option icon={BanknotesIcon} title="Cashless Claim at Any Shop in India">
+              Customers can benefit from the convenience of making cashless insurance claims at any authorized repair shop across India.
               </Option>
             </div>
-            <Option icon={CloudArrowDownIcon} title="State Management">
-              Explore state management options, including local component state
-              and global state using Redux or Context API.
+            <Option icon={PhoneIcon} title="24x7 Claim Helpline Service">
+            They provide round-the-clock assistance through their claim helpline service, ensuring that clients can get support whenever they need it.
+            </Option>
+            <Option icon={TagIcon} title="Loaner Car in Selected Cities">
+            In specific cities, they provide loaner cars to clients while their vehicles are being repaired, ensuring that they can continue with their daily activities without disruption.
             </Option>
           </div>
-          <BackgroundCard title="Supportive Community">
-            Connect with fellow learners, share experiences, and get support
-            from instructors and peers.
-          </BackgroundCard>
+          <BackgroundImageCard title="" imageUrl="/image/advisor.png">
+          {/* Learn from industry professionals with years of hands-on experience
+            in React development. */}
+        </BackgroundImageCard>
         </div>
       </div>
     </section>

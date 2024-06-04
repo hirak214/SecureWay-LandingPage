@@ -12,11 +12,11 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@heroicons/react": "2.0.18",
-    "@material-tailwind/react": "2.1.2",
-    "next": "13.4.0",
-    "react": "18",
-    "react-dom": "18"
+    "@heroicons/react": "^2.0.18",
+    "@material-tailwind/react": "^2.1.9",
+    "next": "^14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "20",
@@ -28,5 +28,8 @@
     "postcss": "8",
     "tailwindcss": "3",
     "typescript": "5"
-  }
+  },
+  "description": "![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-tailwind-course-details-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-course-details-page/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-tailwind-course-details-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-course-details-page/issues?q=is%3Aissue+is%3Aclosed)",
+  "main": "next.config.js",
+  "keywords": []
 }

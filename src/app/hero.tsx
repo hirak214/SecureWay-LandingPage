@@ -13,20 +13,18 @@ function Hero() {
           color="white"
           className="md:max-w-full lg:max-w-3xl"
         >
-          Master the Power of React Beginner Course
+          Enjoy perks of 0 Debt on Comprehensive Policy
         </Typography>
         <Typography
           variant="lead"
           color="white"
           className="mt-6 mb-10 w-full md:max-w-full lg:max-w-3xl"
         >
-          Our React Course is your gateway to becoming a proficient React
-          developer. Learn to build dynamic and interactive web applications
-          using one of the most popular JavaScript libraries in the industry.
+          Secureway Solutions your trusted partner for hassle-free insurance solutions. Enjoy peace of mind with our expert advice.
         </Typography>
         <div>
           <Button variant="gradient" color="white">
-            ENROLL TODAY
+            JOIN US
           </Button>
         </div>
       </div>

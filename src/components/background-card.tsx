@@ -25,3 +25,4 @@ export function BackgroundCard({ title, children }: BackgroundCardProps) {
   );
 }
 export default BackgroundCard;
+

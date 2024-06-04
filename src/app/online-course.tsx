@@ -46,23 +46,23 @@ export function OnlineCourse() {
         </div>
         <div className="col-span-2 lg:pl-24">
           <Typography variant="h2" color="blue-gray" className="mb-4">
-            Online Course
+            About Us
           </Typography>
           <Typography
             variant="lead"
             className="mb-5 max-w-lg px-4 text-left text-lg !text-gray-500 lg:px-0  "
           >
-            In this comprehensive React Course, you&apos;ll delve into the world
-            of React, from its fundamentals to advanced techniques. Our expert
-            instructors will guide you through every step.
+            Secureway Solutions is a leading provider of insurance solutions dedicated to safeguarding your assets and
+            providing peace of mind. With a focus on professionalism and personalized service, we offer expert advice,
+            competitive premiums, and round-the-clock support to meet all your insurance needs.
           </Typography>
 
           <div className="col-span-2 grid grid-cols-1 gap-10 sm:grid-cols-3 ">
-            {FEATURES.map(({ icon, title, description }) => (
+            {/* {FEATURES.map(({ icon, title, description }) => (
               <FeatureCard key={title} icon={icon} title={title}>
                 {description}
               </FeatureCard>
-            ))}
+            ))} */}
           </div>
         </div>
       </div>

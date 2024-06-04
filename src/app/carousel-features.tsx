@@ -10,13 +10,13 @@ export function CarouselFeatures() {
     <section className="px-8 pt-40 pb-20">
       <div className="flex mb-16 flex-col items-center">
         <Typography variant="h2" className="text-center mb-2" color="blue-gray">
-          What Students Say
+          What Customers Say
         </Typography>
         <Typography
           variant="lead"
           className="mb-3 w-full text-center font-normal !text-gray-500 lg:w-10/12"
         >
-          Discover what our students have to say about our course!
+          Discover what our customers have to say about our service!
         </Typography>
       </div>
       <div className="container mx-auto !rounded-lg bg-[url('/image/Background.png')] bg-center py-10 lg:px-16">

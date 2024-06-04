@@ -10,9 +10,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Course Details Page",
+  title: "Secureway Solutions",
   description:
-    "Introducing Tailwind Course Details Page, a comprehensive and user-friendly course details template designed using Tailwind CSS and Material Tailwind.",
+    "Secureway Solutions is a leading insurance provider that offers a wide range of insurance products and services to meet the needs of individuals and businesses.",
 };
 
 export default function RootLayout({
