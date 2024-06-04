@@ -17,10 +17,12 @@ export function BackgroundImageCard({ title, children, imageUrl }: BackgroundCar
   return (
     <div className="grid place-items-center h-full px-8 py-6 rounded-xl" style={cardStyle}>
       <div className="text-white">
-        <Typography variant="h2" className="text-center">
+        <Typography variant="h2" className="text-center"
+        placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {title}
         </Typography>
-        <Typography className="my-2 text-base w-full text-center font-normal">
+        <Typography className="my-2 text-base w-full text-center font-normal"
+        placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           {children}
         </Typography>
       </div>

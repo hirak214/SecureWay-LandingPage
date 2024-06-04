@@ -9,10 +9,10 @@ export function CarouselFeatures() {
   return (
     <section className="px-8 pt-40 pb-20">
       <div className="flex mb-16 flex-col items-center">
-        <Typography variant="h2" className="text-center mb-2" color="blue-gray">
+        <Typography variant="h2" className="text-center mb-2" color="blue-gray" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           What Customers Say
         </Typography>
-        <Typography
+        <Typography placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
           variant="lead"
           className="mb-3 w-full text-center font-normal !text-gray-500 lg:w-10/12"
         >
@@ -21,6 +21,7 @@ export function CarouselFeatures() {
       </div>
       <div className="container mx-auto !rounded-lg bg-[url('/image/Background.png')] bg-center py-10 lg:px-16">
         <Carousel
+        placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
           transition={{ duration: 1 }}
           nextArrow={() => <></>}
           prevArrow={() => <></>}
@@ -45,6 +46,7 @@ export function CarouselFeatures() {
             >
               <div className="col-span-3 flex flex-col items-start justify-center">
                 <Typography
+                placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
                   variant="lead"
                   color="white"
                   className="mb-5 text-xl font-normal "
@@ -55,6 +57,7 @@ export function CarouselFeatures() {
                   doorstep for free.
                 </Typography>
                 <Typography
+                placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
                   variant="small"
                   color="white"
                   className="font-medium uppercase"

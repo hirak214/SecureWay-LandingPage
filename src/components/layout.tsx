@@ -1,10 +1,23 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { ThemeProvider } from "@material-tailwind/react";
 
-export function Layout({ children }: { children: React.ReactNode }) {
-  return <ThemeProvider>{children}</ThemeProvider>;
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export function Layout({ children }: LayoutProps) {
+  // Ensure children are valid React elements or null
+  const validChildren = React.isValidElement(children) ? children : null;
+
+  return (
+    <ThemeProvider>
+      <Suspense fallback={<div>Loading...</div>}>
+        {validChildren || <></>}
+      </Suspense>
+    </ThemeProvider>
+  );
 }
 
 export default Layout;

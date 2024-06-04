@@ -16,6 +16,7 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
+      placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -57,6 +58,7 @@ export function Navbar() {
 
   return (
     <MTNavbar
+    placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
       fullWidth
       shadow={false}
       blurred={false}
@@ -64,7 +66,7 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"}>
+        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"} placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
           Secureway Solutions
         </Typography>
         <ul
@@ -81,6 +83,7 @@ export function Navbar() {
         </ul>
         <div className="hidden gap-2 lg:flex">
           <IconButton
+          placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
@@ -88,6 +91,7 @@ export function Navbar() {
             <i className="fa-brands fa-twitter text-base" />
           </IconButton>
           <IconButton
+          placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
@@ -95,6 +99,7 @@ export function Navbar() {
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
           <IconButton
+          placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
@@ -102,12 +107,13 @@ export function Navbar() {
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"} size="sm">
+            <Button color={isScrolling ? "gray" : "white"} size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               Join Us
             </Button>
           </a>
         </div>
         <IconButton
+        placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
@@ -134,17 +140,17 @@ export function Navbar() {
             </NavItem>
           </ul>
           <div className="mt-4 flex gap-2">
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton variant="text" color="gray" size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton variant="text" color="gray" size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm">
+            <IconButton variant="text" color="gray" size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray" size="sm" className="ml-auto">
+              <Button color="gray" size="sm" className="ml-auto"placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
                 Blocks
               </Button>
             </a>
