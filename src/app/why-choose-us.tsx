@@ -57,11 +57,10 @@ export function WhyChooseUs() {
       <div className="mt-8">
         <div className="grid grid-cols-1 items-center md:grid-cols-2 gap-12 mb-24">
 
-{/* 
+
         <BackgroundImageCard title="" imageUrl="/image/mechanic.png">
-  Learn from industry professionals with years of hands-on experience
-  in React development.
-</BackgroundImageCard> */}
+        ‎ 
+        </BackgroundImageCard>
 
 
           <div className="space-y-8">
@@ -102,9 +101,9 @@ export function WhyChooseUs() {
             In specific cities, they provide loaner cars to clients while their vehicles are being repaired, ensuring that they can continue with their daily activities without disruption.
             </Option>
           </div>
-          {/* <BackgroundImageCard title="" imageUrl="/image/advisor.png" > 
-          Learn from industry professionals with years of hands-on experience in React development.
-        </BackgroundImageCard> */}
+          <BackgroundImageCard title="" imageUrl="/image/advisor.png" > 
+          ‎ 
+        </BackgroundImageCard>
         </div>
       </div>
     </section>
