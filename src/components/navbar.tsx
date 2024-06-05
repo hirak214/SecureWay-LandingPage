@@ -16,7 +16,9 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
-      placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -58,7 +60,9 @@ export function Navbar() {
 
   return (
     <MTNavbar
-    placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
       fullWidth
       shadow={false}
       blurred={false}
@@ -66,7 +70,10 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"} placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+        <Typography variant="h6" color={isScrolling ? "blue-gray" : "white"} className=""
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}>
           Secureway Solutions
         </Typography>
         <ul
@@ -83,7 +90,10 @@ export function Navbar() {
         </ul>
         <div className="hidden gap-2 lg:flex">
           <IconButton
-          placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
+          className=""
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
@@ -91,7 +101,10 @@ export function Navbar() {
             <i className="fa-brands fa-twitter text-base" />
           </IconButton>
           <IconButton
-          placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
+          className=""
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
@@ -99,7 +112,10 @@ export function Navbar() {
             <i className="fa-brands fa-facebook text-base" />
           </IconButton>
           <IconButton
-          placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
+          className=""
+          placeholder=""
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
             variant="text"
             color={isScrolling ? "gray" : "white"}
             size="sm"
@@ -107,13 +123,20 @@ export function Navbar() {
             <i className="fa-brands fa-instagram text-base" />
           </IconButton>
           <a href="https://www.material-tailwind.com/blocks" target="_blank">
-            <Button color={isScrolling ? "gray" : "white"} size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+            <Button
+            className=""
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            color={isScrolling ? "gray" : "white"} size="sm">
               Join Us
             </Button>
           </a>
         </div>
         <IconButton
-        placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}
+        placeholder=""
+        onPointerEnterCapture={() => {}}
+        onPointerLeaveCapture={() => {}}
           variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
@@ -126,7 +149,7 @@ export function Navbar() {
           )}
         </IconButton>
       </div>
-      <Collapse open={open}>
+      {/* <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
           <ul className="flex flex-col gap-4 text-blue-gray-900">
             <NavItem>Home</NavItem>
@@ -140,23 +163,42 @@ export function Navbar() {
             </NavItem>
           </ul>
           <div className="mt-4 flex gap-2">
-            <IconButton variant="text" color="gray" size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+            <IconButton 
+            className=""
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            variant="text" color="gray" size="sm">
               <i className="fa-brands fa-twitter text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+            <IconButton 
+            className=""
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            variant="text" color="gray" size="sm">
               <i className="fa-brands fa-facebook text-base" />
             </IconButton>
-            <IconButton variant="text" color="gray" size="sm" placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+            <IconButton 
+            className=""
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
+            variant="text" color="gray" size="sm">
               <i className="fa-brands fa-instagram text-base" />
             </IconButton>
             <a href="https://www.material-tailwind.com/blocks" target="_blank">
-              <Button color="gray" size="sm" className="ml-auto"placeholder="" onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
+              <Button 
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
+              color="gray" size="sm" className="ml-auto">
                 Blocks
               </Button>
             </a>
           </div>
         </div>
-      </Collapse>
+      </Collapse> */}
     </MTNavbar>
   );
 }
